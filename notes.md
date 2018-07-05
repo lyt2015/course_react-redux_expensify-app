@@ -59,12 +59,13 @@ tabIndex target title type useMap value width wmode wrap
 | Transition Events  | onTransitionEnd                                                            |
 | Other Events       | onToggle                                                                   |
 
-
 ## webpack exports
+
 one default export
 many named exports
 
 ## yarn modules
+
 ```
 "babel-core": "6.25.0",
 "babel-loader": "7.1.1",
@@ -82,4 +83,5 @@ many named exports
 "sass-loader": "6.0.6",
 "node-sass": "4.5.3",
 "normalize.css": "7.0.0",
+"react-router-dom": "^4.2.2",
 ```
