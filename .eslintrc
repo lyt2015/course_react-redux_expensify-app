@@ -1,0 +1,41 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
+  "globals": {},
+  "env": {
+    "node": true,
+    "browser": true,
+    "es6": true,
+    "jquery": true
+  },
+  "plugins": ["babel"],
+  "rules": {
+    "strict": "off",
+    "comma-dangle": ["warn", "always-multiline"],
+    "linebreak-style": ["error", "windows"],
+    "no-console": "off",
+    "arrow-parens": ["error", "as-needed"],
+    "no-unused-vars": ["error", { "vars": "local", "args": "none" }],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "semi": "off",
+    "no-alert": "off",
+    "no-plusplus": "off",
+    "consistent-return": "off",
+    "no-use-before-define": "off",
+    "operator-linebreak": "off",
+    "class-methods-use-this": "off",
+    "lines-between-class-members": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/button-has-type": "off",
+    "react/prefer-stateless-function": "off",
+    "react/no-multi-comp": "off",
+    "react/destructuring-assignment": "off",
+    "react/jsx-one-expression-per-line": 0,
+    "react/prop-types": "off",
+    "react/sort-comp": "off",
+    "babel/transform-class-properties": "off"
+  }
+}
