@@ -36,6 +36,7 @@
     "react/jsx-one-expression-per-line": 0,
     "react/prop-types": "off",
     "react/sort-comp": "off",
+    "react/jsx-boolean-value": "off",
     "babel/transform-class-properties": "off"
   }
 }
