@@ -84,4 +84,7 @@ many named exports
 "node-sass": "4.5.3",
 "normalize.css": "7.0.0",
 "react-router-dom": "^4.2.2",
+"redux": "^3.7.2",
+"uuid": "^3.1.0",
+"babel-plugin-transform-object-rest-spread": "^6.23.0",
 ```
