@@ -87,4 +87,5 @@ many named exports
 "redux": "^3.7.2",
 "uuid": "^3.1.0",
 "babel-plugin-transform-object-rest-spread": "^6.23.0",
+"react-redux": "^5.0.5",
 ```
