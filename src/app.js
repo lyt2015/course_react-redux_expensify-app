@@ -6,7 +6,6 @@ import AppRouter from './routers/AppRouter'
 import configureStore from './store/configureStore'
 import getVisibleExpenses from './selectors/expenses'
 import { addExpense } from './actions/expenses'
-import { setTextFilter } from './actions/filters'
 
 import 'normalize.css/normalize.css'
 
@@ -21,16 +20,11 @@ const unsubscribe = store.subscribe(() => {
   const visibleExpenses = getVisibleExpenses(state.expenses, state.filters)
   console.log(visibleExpenses)
 })
-
-store.dispatch(addExpense({ description: 'Course bill', amount: 300 }))
-store.dispatch(addExpense({ description: 'Utilities bill', amount: 100 }))
-store.dispatch(setTextFilter('bill'))
-
-setTimeout(() => {
-  store.dispatch(setTextFilter('course'))
-}, 1000)
-
 unsubscribe()
+
+store.dispatch(addExpense({ description: 'Course fee', amount: 3000, createdAt: 2000 }))
+store.dispatch(addExpense({ description: 'Utilities fee', amount: 1000, createdAt: 1000 }))
+store.dispatch(addExpense({ description: 'Rent', amount: 10000, createdAt: 100 }))
 
 const jsx = (
   <Provider store={store}>

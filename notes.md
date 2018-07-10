@@ -88,4 +88,7 @@ many named exports
 "uuid": "^3.1.0",
 "babel-plugin-transform-object-rest-spread": "^6.23.0",
 "react-redux": "^5.0.5",
+"moment": "^2.18.1",
+"react-dates": "12.7.0",
+"react-addons-shallow-compare": "15.6.0",
 ```

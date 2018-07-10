@@ -38,6 +38,7 @@
     "react/prop-types": "off",
     "react/sort-comp": "off",
     "react/jsx-boolean-value": "off",
-    "babel/transform-class-properties": "off"
+    "babel/transform-class-properties": "off",
+    "jsx-a11y/no-autofocus": "off"
   }
 }

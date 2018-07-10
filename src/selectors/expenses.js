@@ -10,10 +10,12 @@ export default (expenses, { text, sortBy, startDate, endDate }) => {
     })
     .sort((a, b) => {
       if (sortBy === 'date') {
+        // Newer one comes first
         return b.createdAt - a.createdAt
       }
 
       if (sortBy === 'amount') {
+        // Pricier one comes first
         return b.amount - a.amount
       }
 
