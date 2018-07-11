@@ -91,4 +91,5 @@ many named exports
 "moment": "^2.18.1",
 "react-dates": "12.7.0",
 "react-addons-shallow-compare": "15.6.0",
+"jest": "^20.0.4",
 ```

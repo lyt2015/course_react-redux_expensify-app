@@ -4,7 +4,7 @@
   "parserOptions": {
     "ecmaVersion": 6
   },
-  "globals": {},
+  "globals": { "test": false, "expect": false },
   "env": {
     "node": true,
     "browser": true,
