@@ -92,4 +92,5 @@ many named exports
 "react-dates": "12.7.0",
 "react-addons-shallow-compare": "15.6.0",
 "jest": "^20.0.4",
+"react-test-renderer": "16.0.0",
 ```
