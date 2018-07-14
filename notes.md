@@ -98,3 +98,46 @@ many named exports
 "raf": "3.3.2",
 "enzyme-to-json": "3.0.1",
 ```
+
+## git: https://git-scm.com
+```bash
+git init - Create a new git repo
+git staus - View the changes to your project code
+git add - Add files to staging area
+git commit - Creates a new commit with files from staging area
+git log - View recent commits
+```
+
+## Connecting to GitHub with SSH: https://help.github.com/articles/connecting-to-github-with-ssh/
+
+## Setup SSH keys
+> In git-bash:
+```bash
+ls -al ~/.ssh
+ssh-keygen -t rsa -b 4096 -C "sir.lyt@gmail.com"
+// choose default key file nmae, no password
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+clip < ~/.ssh/id_rsa.pub
+// the public ssh key is in clipboard, add it via GitHub page
+ssh -T git@github.com
+// choose continue connection
+```
+
+## Setup GitHub repository
+
+### …or create a new repository on the command line
+```
+echo "# course_react-redux_expensify-app" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/lyt2015/course_react-redux_expensify-app.git
+git push -u origin master
+```
+
+### …or push an existing repository from the command line
+```
+git remote add origin https://github.com/lyt2015/course_react-redux_expensify-app.git
+git push -u origin master
+```
