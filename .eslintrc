@@ -9,11 +9,15 @@
     "node": true,
     "browser": true,
     "es6": true,
-    "jquery": true
+    "jquery": true,
+    "jest": true
   },
   "plugins": ["babel"],
   "rules": {
-    "object-curly-newline": "warn",
+    "prefer-destructuring": "off",
+    "one-var": "off",
+    "one-var-declaration-per-line": "off",
+    "object-curly-newline": "off",
     "strict": "off",
     "comma-dangle": ["warn", "always-multiline"],
     "linebreak-style": ["error", "windows"],

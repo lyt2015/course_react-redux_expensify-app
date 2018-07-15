@@ -97,6 +97,7 @@ many named exports
 "enzyme-adapter-react-16": "1.0.0",
 "raf": "3.3.2",
 "enzyme-to-json": "3.0.1",
+"extract-text-webpack-plugin": "3.0.0",
 ```
 
 ## git: https://git-scm.com
