@@ -64,6 +64,9 @@ tabIndex target title type useMap value width wmode wrap
 one default export
 many named exports
 
+## Redux DevTools extension: http://extension.remotedev.io/
+> GitHub: https://github.com/zalmoxisus/redux-devtools-extension
+
 ## yarn modules
 
 ```
@@ -98,6 +101,7 @@ many named exports
 "raf": "3.3.2",
 "enzyme-to-json": "3.0.1",
 "extract-text-webpack-plugin": "3.0.0",
+"express": "4.15.4",
 ```
 
 ## git: https://git-scm.com
@@ -116,13 +120,13 @@ git log - View recent commits
 ```bash
 ls -al ~/.ssh
 ssh-keygen -t rsa -b 4096 -C "sir.lyt@gmail.com"
-// choose default key file nmae, no password
+# choose default key file nmae, no password
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
 clip < ~/.ssh/id_rsa.pub
-// the public ssh key is in clipboard, add it via GitHub page
+# the public ssh key is in clipboard, add it via GitHub page
 ssh -T git@github.com
-// choose continue connection
+# choose continue connection
 ```
 
 ## Setup GitHub repository
@@ -141,4 +145,33 @@ git push -u origin master
 ```
 git remote add origin https://github.com/lyt2015/course_react-redux_expensify-app.git
 git push -u origin master
+```
+
+## Setup Heroku
+### Configuration
+#### package.json
+```js
+ "scripts": {
+    "start": "node server/server.js",
+    "heroku-postbuild": "yarn run build:prod",
+ }
+```
+#### server.js
+`const port = process.env.PORT || 3000`
+
+### Install Heroku CLI
+```shell
+heroku --version
+heroku login
+heroku create course-expensify-app-zin
+# !    Name must start with a letter and can only contain
+# !    lowercase letters, numbers, and dashes. Name is too long
+# !    (maximum is 30 characters)
+git remote
+git remote -v
+git add .
+git commit -m 'Setup production build and server'
+git push
+git push heroku master
+heroku open
 ```
