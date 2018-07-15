@@ -174,4 +174,5 @@ git commit -m 'Setup production build and server'
 git push
 git push heroku master
 heroku open
+heroku logs
 ```
