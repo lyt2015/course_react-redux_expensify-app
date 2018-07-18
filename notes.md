@@ -105,6 +105,8 @@ many named exports
 "firebase": "4.2.0",
 "redux-thunk": "2.2.0",
 "redux-mock-sotre": "1.2.3",
+"cross-env": "5.0.5",
+"dotenv": "4.0.0",
 ```
 
 ## git: https://git-scm.com
