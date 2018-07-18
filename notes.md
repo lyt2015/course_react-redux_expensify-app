@@ -102,6 +102,9 @@ many named exports
 "enzyme-to-json": "3.0.1",
 "extract-text-webpack-plugin": "3.0.0",
 "express": "4.15.4",
+"firebase": "4.2.0",
+"redux-thunk": "2.2.0",
+"redux-mock-sotre": "1.2.3",
 ```
 
 ## git: https://git-scm.com
