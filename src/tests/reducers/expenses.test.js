@@ -1,5 +1,6 @@
 import expensesReducer from '../../reducers/expenses'
 import expenses from '../fixtures/expenses'
+import { setExpenses } from '../../actions/expenses'
 
 test('should set default state', () => {
   const state = expensesReducer(undefined, { type: '@@INIT' })
@@ -63,4 +64,27 @@ test('should not edit an expense with invalid id', () => {
   const state = expensesReducer(expenses, action)
 
   expect(state).toEqual(expenses)
+})
+
+test('should set expenses', () => {
+  const expensesToSet = [
+    {
+      id: '99',
+      description: 'Great Mouse',
+      note: '',
+      amount: 40,
+      createdAt: 9000,
+    },
+    {
+      id: '999',
+      description: 'Gread Music Player',
+      note: '',
+      amount: 700,
+      createdAt: 777,
+    },
+  ]
+  const action = { type: 'SET_EXPENSES', expenses: expensesToSet }
+  const state = expensesReducer(expenses, action)
+
+  expect(state).toEqual(expensesToSet)
 })
