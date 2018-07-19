@@ -14,6 +14,7 @@
   },
   "plugins": ["babel"],
   "rules": {
+    "import/no-named-as-default": "off",
     "arrow-body-style": "off",
     "prefer-destructuring": "off",
     "one-var": "off",

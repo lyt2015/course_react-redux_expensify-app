@@ -1,5 +1,8 @@
+// import * as firebase from 'firebase'
+
 import firebase from 'firebase/app'
 import 'firebase/database'
+import 'firebase/auth'
 
 const config = {
   apiKey: process.env.FIREBASE_API_KEY,
@@ -9,12 +12,12 @@ const config = {
   storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
   messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
 }
-
 firebase.initializeApp(config)
-
 const database = firebase.database()
 
-export { firebase, database as default }
+const googleAuthProvider = new firebase.auth.GoogleAuthProvider()
+
+export { firebase, googleAuthProvider, database as default }
 
 /*
 const snapshotToArray = snapshot => {
