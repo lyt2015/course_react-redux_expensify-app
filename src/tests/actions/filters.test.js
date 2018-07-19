@@ -1,3 +1,5 @@
+import moment from 'moment'
+
 import {
   setTextFilter,
   sortByAmount,
@@ -5,7 +7,6 @@ import {
   setStartDate,
   setEndDate,
 } from '../../actions/filters'
-import moment from 'moment'
 
 test('should generate set start date action object', () => {
   const action = setStartDate(moment(0))
