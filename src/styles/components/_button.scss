@@ -1,0 +1,27 @@
+.button {
+  background: $dark-blue;
+  border: none;
+  color: $dark-white;
+  display: inline-block;
+  font-size: $font-size-large;
+  font-weight: 300;
+  line-height: 1;
+  padding: $s-size;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.button:hover {
+  background: $blue;
+  color: white;
+}
+
+.button--link,
+.button--link:hover {
+  background: none;
+}
+
+.button--secondary {
+  @extend .button;
+  background: #888;
+}
