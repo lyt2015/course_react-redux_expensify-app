@@ -181,3 +181,12 @@ git push heroku master
 heroku open
 heroku logs
 ```
+
+## Enhancements
+
+### Add confirmation modal when removing expense (with 'yes' and 'no' options)
+Hint: use react-modal like we use in indecision-app
+### Show number of hidden expenses in /dashboard summary
+Hint: showing a line below summary with a smaller font that looks like '3 hidden expenses because of filters'
+### Add support for another social login system (GitHub, Facebook, Twitter)
+### Buy a custom domain and configure it with Heroku (or use subdomain on domain you own)
